@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts';
+
+@import 'blocs/header';
+@import 'blocs/footer';
+
+h1 {
+  color: brown;
+  font-family: "Roboto", Arial;
+
+  &:hover {
+    color: green;
+  }
+}
