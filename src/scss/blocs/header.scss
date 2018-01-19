@@ -1,3 +1,47 @@
-header {
-  background: green;
+%stick {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  width: 1px;
+  height: 70%;
+  background: #ddd;
+}
+
+
+.header {
+  margin: 1rem 0;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:nth-child(1):after {
+    @extend %stick;
+    right: 0;
+  }
+
+  &:nth-child(2):after {
+    @extend %stick;
+    left: 0;
+  }
+
+  @include medium {
+  }
+
+  @include large {
+  }
+
+
+}
+
+.nav__img {
+  width: 20rem;
 }
