@@ -1,15 +1,39 @@
 @import 'reset';
+@import 'medias';
 @import 'colors';
 @import 'fonts';
 
 @import 'blocs/header';
+@import 'blocs/home';
+@import 'blocs/helpSend';
 @import 'blocs/footer';
 
-h1 {
-  color: brown;
-  font-family: "Roboto", Arial;
 
-  &:hover {
-    color: green;
-  }
+
+
+
+
+
+/* ##########
+------   COMMON
+########## */
+
+body{
+    position:relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    color: #B4153B;
+    font-family: 'Ribeye', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    font-weight:300;
+    font-size: 60px;
 }

@@ -1,0 +1,76 @@
+#yarn {
+    @include large {
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        background-image: url('../img/ball.png');
+        top: 20px;
+        left:50%;
+        z-index: 2;
+    }
+}
+
+#fil {
+    @include large {
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        background-image: url('../img/border.png');
+        top:0;
+        left:50%;
+        z-index: 1;
+    }
+}
+
+.group-home{
+    @include medium {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.group-home-elem{
+    @include medium {
+        width:49%;
+    }
+
+    .group-home-elem-hat{
+        img{
+            transition-duration: 1s;
+            display: block;
+            width: 300px;
+        }
+    }
+}
+
+
+#counter{
+    display: none;
+    transition-duration: 1s;
+}
+
+h2.secondH2{
+    font-weight: 800;
+    font-size: 120px;
+}
+
+.btn{
+    background: #FFCE85;
+    color: #fff;
+    display: block;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    margin: 250px auto 0;
+}
+
+
+.btn a{
+    color: #fff;
+    font-size: 40px;
+}
+
+.arrived{
+    background: red;
+}
