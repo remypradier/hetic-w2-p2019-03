@@ -1,13 +1,11 @@
 /* Counter hat left */
+var hat = document.querySelector('#bonnet');
+var counter = document.querySelector('#counter');
 
-var counter = document.querySelector('#count');
 setInterval(function(){
-    if(counter.innerHTML > 45765){
-        counter.innerHTML = counter.innerHTML - 2365;
-    } else{
-        return;
-    }
-  }, 0.001);
+    hat.style.transform = "translate(0,-75px) rotate(35deg)";
+    counter.style.display = 'block';
+}, 1000);
 
 
 /* ANiMATION YARN BALL */

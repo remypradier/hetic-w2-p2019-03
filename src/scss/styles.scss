@@ -1,14 +1,26 @@
 @import 'reset';
+@import 'medias';
 @import 'colors';
 @import 'fonts';
 
 @import 'blocs/header';
+@import 'blocs/home';
+@import 'blocs/helpSend';
 @import 'blocs/footer';
+
+
+
+
+
 
 
 /* ##########
 ------   COMMON
 ########## */
+
+body{
+    position:relative;
+}
 
 a{
     text-decoration: none;
@@ -25,161 +37,3 @@ h2{
     font-weight:300;
     font-size: 60px;
 }
-
-.group-column{
-    display: inline-block;
-}
-
-.group-column_w50{
-    width:49%;
-    vertical-align: middle;
-}
-
-.group-column_w66{
-    width:66%;
-    border:1px solid orange;
-    vertical-align: top;
-}
-
-.group-column_w33{
-    width:33%;
-    border:1px solid orange;
-    vertical-align: top;
-}
-
-.group-column_w20{
-    width:19%;
-    vertical-align: middle;
-}
-
-body{
-    position:relative;
-}
-
-.yarn {
-  width: 27px;
-  height: 27px;
-  position: absolute;
-  background-image: url('../img/ball.png');
-  top: 20px;
-  left:50%;
-  z-index: 2;
-}
-
-.fil {
-  width: 27px;
-  height: 27px;
-  position: absolute;
-  background-image: url('../img/border.png');
-  top:0;
-  left:50%;
-  z-index: 1;
-}
-
-
-
-/* ##########
-------   HEADER
-########## */
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-}
-
-nav ul li img{
-    display: block;
-    height:100px;
-}
-
-.btn{
-    background: #FFCE85;
-    color: #fff;
-    display: block;
-    width: 350px;
-    padding: 20px;
-    text-align: center;
-    margin: 250px auto 0;
-}
-
-
-.btn a{
-    color: #fff;
-    font-size: 40px;
-}
-
-.arrived{
-    background: red;
-}
-
-/* SECTION HEADER */
-
-.group-header{
-    height:100vh;
-}
-
-h2.secondH2{
-    font-weight: 800;
-    font-size: 120px;
-}
-
-#count{
-    background: url(../img/counter.png) center center;
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding-top: 120px;
-    font-size: 30px;
-}
-
-/* OTHER PART */
-
-
-.separateur{
-    width: 5%;
-}
-
-.w5{
-    width: 30%;
-}
-
-
-  
-  
-  .hand-hour {
-    fill: #bbd032;
-    -webkit-transform-origin: 50% 90.91%;
-    -moz-transform-origin: 50% 90.91%;
-    transform-origin: 50% 90.91%;
-  /*   transform: rotate(180deg); */
-    -webkit-animation: 20s dialspin infinite linear;  
-    -moz-animation: 20s dialspin infinite linear;
-    animation: 20s dialspin infinite linear;  
-  }
-  
-  .hand-min {
-    -webkit-transform-origin: 9.09% 50%;
-    -moz-transform-origin: 9.09% 50%;
-    transform-origin: 9.09% 50%;
-    -webkit-animation: 1s dialspin infinite linear;
-    -moz-animation: 1s dialspin infinite linear;
-    animation: 1s dialspin infinite linear;
-    
-  }
-  
-  @-webkit-keyframes dialspin  {
-    0% {-webkit-transform: rotate(0deg)}
-    100% { -webkit-transform: rotate(360deg) }
-  }
-  @-moz-keyframes dialspin  {
-    0% {-moz-transform: rotate(0deg)}
-    100% { -moz-transform: rotate(360deg) }
-  }
-  @keyframes dialspin  {
-    0% {transform: rotate(0deg)}
-    100% { transform: rotate(360deg) }
-  }
-
