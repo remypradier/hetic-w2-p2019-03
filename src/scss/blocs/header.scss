@@ -7,9 +7,9 @@
   background: #ddd;
 }
 
-
 .header {
-  margin: 1rem 0;
+  padding: 1rem 0;
+  background: #fff;
 }
 
 .navigation__list {
@@ -33,15 +33,20 @@
     left: 0;
   }
 
-  @include medium {
-  }
-
-  @include large {
-  }
-
-
 }
 
 .nav__img {
-  width: 20rem;
+  width: 10rem;
+}
+
+@include medium {
+
+  .navigation {
+    width: 45%;
+  }
+  .nav__item {
+    width: 33.33%;
+    position: inherit;
+  }
+
 }

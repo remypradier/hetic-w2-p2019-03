@@ -1,11 +1,13 @@
 # Refonte du site metstonbonnet.fr
 
 ## Commande
-en dev comme build : 
+
 ```
-gulp
+Exécuter l'application localement:
+
+$ npm run dev
 ```
-(modification en cours ...)
+
 
 ## Lien netlify
 
