@@ -1,3 +1,52 @@
-header {
-  background: green;
+%stick {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  width: 1px;
+  height: 70%;
+  background: #ddd;
+}
+
+.header {
+  padding: 1rem 0;
+  background: #fff;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:nth-child(1):after {
+    @extend %stick;
+    right: 0;
+  }
+
+  &:nth-child(2):after {
+    @extend %stick;
+    left: 0;
+  }
+
+}
+
+.nav__img {
+  width: 10rem;
+}
+
+@include medium {
+
+  .navigation {
+    width: 45%;
+  }
+  .nav__item {
+    width: 33.33%;
+    position: inherit;
+  }
+
 }
