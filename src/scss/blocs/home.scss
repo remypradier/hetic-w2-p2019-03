@@ -1,3 +1,135 @@
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 100%;
+  @include medium {
+    width: 50%;
+  }
+
+}
+
+.intro__punchline {
+  text-align: center;
+  font-family: "ChalkboardSE-Regular";
+  font-size: 2.15rem;
+  color: #000;
+}
+
+.intro__text {
+  text-align: center;
+  font-family: "Georgia";
+  font-size: 1.16rem;
+  color: #000;
+}
+
+.title-image {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+
+.title-image__title {
+  font-family: "ChalkboardSE-Light";
+  font-size: 5.3rem;
+  color: #000;
+  line-height: 200%;
+}
+
+.title-image__image {
+  width: 11rem;
+}
+
+.cap {
+  background: green;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  @include medium {
+    width: 50%;
+  }
+}
+
+.cap__image {
+  width: 8rem;
+}
+
+.cap__counter {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0 0 0;
+}
+
+.counter__numbers {
+  text-align: center;
+  font-family: "Georgia-Bold";
+  font-size: 1.85rem;
+  color: #000;
+  position: relative;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 1rem 0;
+}
+
+.counter__numbers:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 15%;
+  background: #000;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.counter__label {
+  text-align: center;
+  font-family: "Georgia";
+  font-size: 1.16rem;
+  color: #000;
+}
+
+.help {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+  width: 100%;
+}
+
+.help__button {
+  background: none;
+  border: 2px solid red;
+  padding: 1rem 4rem;
+  font-family: "ChalkboardSE-Light";
+  font-size: 1.5rem;
+}
+
+.collection {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.collection__button {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 1rem 2rem;
+  font-family: "ChalkboardSE-Light";
+  font-size: 1.5rem;
+}
+
 #yarn {
     @include large {
         width: 27px;
