@@ -1,0 +1,25 @@
+.stape{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+}
+
+.stape__desc{
+  width: 45%;
+}
+
+.stape__picture{
+  width: 35%;
+}
+
+.stape__picture{
+  img{
+    width: 200px;
+  }
+}
+
+.stape__pictureTitle{
+  text-align: center;
+}

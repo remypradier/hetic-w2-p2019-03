@@ -6,6 +6,10 @@
 @import 'blocs/header';
 @import 'blocs/home';
 @import 'blocs/helpSend';
+@import 'blocs/tuto';
+@import 'blocs/stapes';
+@import 'blocs/stapesList';
+@import 'blocs/stape';
 @import 'blocs/footer';
 
 
@@ -13,17 +17,30 @@
 
 
 
-
-/* ##########
-------   COMMON
-########## */
-
 body{
     position:relative;
+    font-family: "ChalkboardSE-Light";
+    color: #4A4A4A;
+    background-color: #FFFCF6;
 }
 
 a{
     text-decoration: none;
+}
+
+h2, h3, h4{
+    font-family: 'Georgia-Regular';
+}
+
+h1{
+    padding: 0 2%;
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+h2{
+    font-weight:300;
+    font-size: 60px;
 }
 
 h3{
@@ -33,7 +50,6 @@ h3{
     text-align: center;
 }
 
-h2{
-    font-weight:300;
-    font-size: 60px;
+h4{
+    color: #A61211;
 }
