@@ -1,7 +1,41 @@
 .groupHelp {
-  /*@include medium {
-    width:70%;
-  }*/
+  width: 100%;
+  padding-bottom: 10%;
 
-  width: 55%;
+  @include medium {
+    width: 55%;
+  }
+}
+
+.groupHelp__title {
+  display: none;
+
+  @include medium{
+    display: block;
+  }
+}
+
+.groupHelp__title-m {
+  display: block;
+
+  @include medium {
+    display: none;
+  }
+}
+
+.groupHelp__text {
+  padding-bottom: 7%;
+}
+
+.groupHelp__button {
+  background-color: white;
+  font-size: 22px;
+  width: 100%;
+  padding: 2% 10%;
+  text-align: right;
+  display: block;
+
+  @include medium {
+    display: none;
+  }
 }

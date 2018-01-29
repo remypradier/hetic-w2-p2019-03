@@ -1,11 +1,7 @@
 .groupInfo {
-  /*
+
   @include medium {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }*/
-
-  display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 }

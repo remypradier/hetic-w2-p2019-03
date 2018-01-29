@@ -1,12 +1,25 @@
 .groupSend {
-  /*@include medium {
-    width:30%;
-  }*/
+    width: 100%;
 
-  width: 40%;
-  padding-left: 5%;
+    @include medium {
+        width: 40%;
+        padding-left: 5%;
+    }
 }
 
 .groupSend__title{
     text-align: center;
+    display: none;
+
+    @include medium{
+      display: block;
+    }
+}
+
+.groupSend__title-m{
+  display: block;
+
+  @include medium{
+    display: none;
+  }
 }

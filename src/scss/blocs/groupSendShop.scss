@@ -1,4 +1,30 @@
+.groupSendShop {
+  padding: 5% 0;
+}
+
+.groupSendPost__title--m {
+  display: block;
+  text-align: center;
+  padding-bottom: 5%;
+
+  @include medium {
+    display: none;
+  }
+}
+
+.groupSendPost__title {
+  display: none;
+
+
+  @include medium {
+    display: block;
+  }
+}
+
 .groupSendShop__text {
+  text-align: center;
+  font-weight: lighter;
+
   span, a{
     color: #A61211;
   }

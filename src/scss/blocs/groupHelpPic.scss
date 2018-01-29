@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 7%;
 }
 
 .groupHelpPic {
@@ -10,20 +11,32 @@
 }
 
 .groupHelpPic__img {
-  width: 150px;
+  width: 100px;
   display: block;
 
   img {
     width: 100%;
   }
+
+  @include medium{
+    width: 150px;
+  }
 }
 
 .groupHelpPic__img--operator {
-  width: 40px;
+  width: 20px;
+
+  @include medium{
+    width: 40px;
+  }
 }
 
 .groupHelpPic__img--svg {
-  width: 100px;
+  width: 70px;
+
+  @include medium{
+    width: 100px;
+  }
 }
 
 .hand-hour {
