@@ -1,5 +1,16 @@
 .groupSendPost {
-  padding: 5% 0;
+  padding: 0 0 10% 0;
+
+  @include small {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include medium {
+    padding: 10% 0;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .groupSendPost__title--m {
@@ -25,5 +36,15 @@
   text-align: center;
   font-weight: lighter;
   font-style: italic;
+
+  @include medium {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 5%;
+  }
+
+  @include large {
+    font-size: 16px;
+  }
 }
 

@@ -1,5 +1,16 @@
 .groupSendShop {
-  padding: 5% 0;
+  padding: 0 0 10% 0;
+
+  @include small {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include medium {
+    padding: 10% 0;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .groupSendPost__title--m {
@@ -24,6 +35,17 @@
 .groupSendShop__text {
   text-align: center;
   font-weight: lighter;
+
+  @include medium {
+    font-size: 14px;
+    text-align: left;
+    line-height: 20px;
+    padding-top: 5%;
+  }
+
+  @include large {
+    font-size: 16px;
+  }
 
   span, a{
     color: #A61211;

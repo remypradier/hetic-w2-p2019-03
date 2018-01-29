@@ -2,8 +2,13 @@
     width: 100%;
 
     @include medium {
-        width: 40%;
-        padding-left: 5%;
+        width: 30%;
+        padding-left: 15%;
+    }
+
+    @include large {
+       width: 25%;
+       padding-left: 15%;
     }
 }
 

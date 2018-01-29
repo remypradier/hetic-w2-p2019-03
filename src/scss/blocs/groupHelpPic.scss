@@ -4,6 +4,17 @@
   justify-content: space-around;
   align-items: center;
   padding-bottom: 7%;
+
+  @include small {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include large {
+    width: 90%;
+    padding: 5% 0;
+    margin: 0;
+  }
 }
 
 .groupHelpPic {
@@ -18,24 +29,28 @@
     width: 100%;
   }
 
-  @include medium{
-    width: 150px;
+  @include medium {
+    width: 80px;
+  }
+
+  @include large {
+    width: 100px;
   }
 }
 
 .groupHelpPic__img--operator {
   width: 20px;
-
-  @include medium{
-    width: 40px;
-  }
 }
 
 .groupHelpPic__img--svg {
   width: 70px;
 
-  @include medium{
-    width: 100px;
+  @include medium {
+    width: 50px;
+  }
+
+  @include large {
+    width: 70px;
   }
 }
 

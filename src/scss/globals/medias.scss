@@ -1,5 +1,12 @@
+$small: 514px;
 $medium: 800px;
 $large: 1024px;
+
+@mixin small {
+  @media (min-width: #{$small}) {
+    @content;
+  }
+}
 
 @mixin medium {
   @media (min-width: #{$medium}) {
