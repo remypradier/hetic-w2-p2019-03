@@ -1,7 +1,8 @@
-@import 'reset';
-@import 'medias';
-@import 'colors';
-@import 'fonts';
+@import 'globals/reset';
+@import 'globals/interface';
+@import 'globals/medias';
+@import 'globals/colors';
+@import 'globals/fonts';
 
 @import 'blocs/header';
 @import 'blocs/home';
@@ -11,45 +12,3 @@
 @import 'blocs/stapesList';
 @import 'blocs/stape';
 @import 'blocs/footer';
-
-
-
-
-
-
-body{
-    position:relative;
-    font-family: "ChalkboardSE-Light";
-    color: #4A4A4A;
-    background-color: #FFFCF6;
-}
-
-a{
-    text-decoration: none;
-}
-
-h2, h3, h4{
-    font-family: 'Georgia-Regular';
-}
-
-h1{
-    padding: 0 2%;
-    font-size: 48px;
-    font-weight: lighter;
-}
-
-h2{
-    font-weight:300;
-    font-size: 60px;
-}
-
-h3{
-    color: #B4153B;
-    font-family: 'Ribeye', cursive;
-    font-size: 30px;
-    text-align: center;
-}
-
-h4{
-    color: #A61211;
-}

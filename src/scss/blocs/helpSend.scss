@@ -1,4 +1,4 @@
-.group-info{
+.group-info {
    @include medium {
         display: flex;
         flex-direction: row;
@@ -6,35 +6,35 @@
     }
 }
 
-.group-help{
+.group-help {
     @include medium {
         width:70%;
     }
 }
 
-.group-send{
+.group-send {
     @include medium {
         width:30%;
     }
 }
 
-.group-help-icone{
+.group-help-icone {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding:20px;
 }
 
-.group-help-icone-elem img{
+.group-help-icone-elem img {
     width: 80px;
     display: block;
 }
 
-.group-help-icone-elem:first-child img{
+.group-help-icone-elem:first-child img {
     width: 250px;
 }
 
-.group-help-icone-elem{
+.group-help-icone-elem {
     align-self: center;
 }
 
@@ -58,15 +58,15 @@
     animation: 1s dialspin infinite linear;
 }
 
-@-webkit-keyframes dialspin  {
+@-webkit-keyframes dialspin {
     0% {-webkit-transform: rotate(0deg)}
     100% { -webkit-transform: rotate(360deg) }
 }
-@-moz-keyframes dialspin  {
+@-moz-keyframes dialspin {
     0% {-moz-transform: rotate(0deg)}
     100% { -moz-transform: rotate(360deg) }
 }
-@keyframes dialspin  {
+@keyframes dialspin {
     0% {transform: rotate(0deg)}
     100% { transform: rotate(360deg) }
 }
