@@ -1,18 +1,16 @@
-.home {
-  display: flex;
-  flex-wrap: wrap;
+.groupHome__titre {
+  @include medium {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .intro {
-  background: red;
-  display: flex;
-  flex-direction: column;
   padding: 0.5rem;
   width: 100%;
   @include medium {
-    width: 50%;
+    width: 49%;
   }
-
 }
 
 .intro__punchline {
@@ -48,23 +46,20 @@
 }
 
 .cap {
-  background: green;
-  display: flex;
-  flex-direction: column;
   padding: 1rem;
+  text-align: center;
   width: 100%;
   @include medium {
-    width: 50%;
+    width: 49%;
   }
 }
 
 .cap__image {
   width: 8rem;
+  padding-top:50px;
 }
 
 .cap__counter {
-  display: flex;
-  flex-direction: column;
   margin: 1.5rem 0 0 0;
 }
 
@@ -135,18 +130,18 @@
         height: 27px;
         position: absolute;
         background-image: url('../img/ball.png');
-        top: 20px;
-        left:50%;
+        top: 17px;
+        left:49%;
         z-index: 2;
     }
 }
 
 #fil {
     @include large {
-        width: 27px;
+        width: 5px;
         height: 27px;
         position: absolute;
-        background-image: url('../img/border.png');
+        background: red;
         top:0;
         left:50%;
         z-index: 1;
@@ -191,7 +186,7 @@ h2.secondH2 {
     color: #fff;
     display: block;
     width: 350px;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     margin: 250px auto 0;
 }
@@ -200,8 +195,4 @@ h2.secondH2 {
 .btn a {
     color: #fff;
     font-size: 40px;
-}
-
-.arrived{
-    background: red;
 }
