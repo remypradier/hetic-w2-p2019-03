@@ -3,11 +3,22 @@
 }
 
 .stapesList--left {
-  margin-left: 10%;
   width: 45%;
-  margin-top: -17%;
+  margin-left: 0;
+  margin-top: -230px;
+
+  @include extra-large {
+    margin-left: 10%;
+    margin-top: -15%;
+  }
+
 }
 
 .stapesList--right {
   width: 45%;
+
+  @include extra-large {
+    width: 45%;
+    margin-top: 5%;
+  }
 }
