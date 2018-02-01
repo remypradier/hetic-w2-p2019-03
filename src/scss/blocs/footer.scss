@@ -1,3 +1,29 @@
-footer {
-  background-color: yellow;
+.footer {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 0 15px;
+
+  @include medium {
+    padding: 0 40px;
+  }
+}
+
+.footer__signature {
+  font-family: Georgia-Regular;
+  width: 50%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.footer__link {
+  font-family: ChalkboardSE-Light;
+  width: 50%;
+  text-align: right;
+  font-size: 14px;
+  color: #EF2810;
+  padding-top: 1%;
 }
