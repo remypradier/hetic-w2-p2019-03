@@ -1,0 +1,57 @@
+.sold {
+  padding-bottom: 15%;
+
+  @include small {
+    padding-bottom: 0;
+  }
+
+  @include medium {
+    padding-bottom: 15%;
+  }
+}
+
+.sold__description {
+  color: #A61211;
+  text-align: center;
+  padding: 5% 0;
+  line-height: 35px;
+  margin: auto;
+
+  @include small {
+    width: 80%;
+  }
+
+  @include medium {
+    display: none;
+  }
+}
+
+.sold__description--m {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  display: none;
+  color: #EF2810;
+  font-style: italic;
+
+  @include medium {
+    display: block;
+    padding-bottom: 10%;
+  }
+
+  @include large {
+    width: 60%;
+  }
+}
+
+.sold__img {
+  width: 100%;
+  height: 160px;
+  background-image: url(../../img/bottles.png);
+  background-size: contain;
+  background-position: center;
+
+  @include medium {
+    height: 139px;
+  }
+}

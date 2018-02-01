@@ -5,12 +5,12 @@ body {
   background-color: #FFFCF6;
 }
 
-section{
+section, header, footer{
+  padding: 0 20px;
+
   @include medium {
     padding: 0 40px;
   }
-
-  padding: 0 15px;
 }
 
 a {
@@ -64,5 +64,5 @@ h4 {
 p {
   font-family: 'Georgia-Regular';
   font-size: 20px;
-  line-height: 30px;
+  line-height: 35px;
 }
