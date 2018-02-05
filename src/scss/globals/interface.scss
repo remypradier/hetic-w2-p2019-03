@@ -1,0 +1,67 @@
+body {
+  position:relative;
+  font-family: "ChalkboardSE-Light";
+  color: #4A4A4A;
+  background-color: #FFFCF6;
+}
+
+section, header, footer{
+  padding: 0 20px;
+
+  @include medium {
+    padding: 0 40px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Georgia-Regular';
+}
+
+h1 {
+  letter-spacing: 1px;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 42px;
+
+  @include medium {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  @include large {
+    font-size: 46px;
+    text-align: left;
+  }
+}
+
+h2 {
+  font-weight:300;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: 'ChalkboardSE-Light', cursive;
+  font-size: 28px;
+
+  @include medium {
+    font-size: 18px;
+  }
+
+  @include large {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  color: #A61211;
+}
+
+p {
+  font-family: 'Georgia-Regular';
+  font-size: 20px;
+  line-height: 35px;
+}

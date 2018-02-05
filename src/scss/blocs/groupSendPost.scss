@@ -1,0 +1,50 @@
+.groupSendPost {
+  padding: 0 0 15% 0;
+
+  @include small {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include medium {
+    padding: 10% 0;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.groupSendPost__title--m {
+  display: block;
+  text-align: center;
+  padding-bottom: 5%;
+
+  @include medium {
+    display: none;
+  }
+}
+
+.groupSendPost__title {
+  display: none;
+
+  @include medium {
+    display: block;
+  }
+}
+
+.groupSendPost__text {
+  color: #A61211;
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+
+  @include medium {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 5%;
+  }
+
+  @include large {
+    font-size: 16px;
+  }
+}
+

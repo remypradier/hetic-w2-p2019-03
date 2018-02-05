@@ -1,0 +1,7 @@
+.groupInfo {
+
+  @include medium {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

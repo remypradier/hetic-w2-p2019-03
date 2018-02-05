@@ -1,16 +1,24 @@
-.stapesList{
+.stapesList {
   width: 50%;
 }
 
-.stapesList--left{
-  //background-color: #eee3bb;
-  margin-left: 10%;
+.stapesList--left {
   width: 45%;
-  margin-top: -17%;
+  margin-left: 0;
+  margin-top: -230px;
+
+  @include extra-large {
+    margin-left: 10%;
+    margin-top: -15%;
+  }
+
 }
 
-.stapesList--right{
-  //background-color: #c7d0ee;
+.stapesList--right {
   width: 45%;
-  //padding-top: 17%;
+
+  @include extra-large {
+    width: 45%;
+    margin-top: 5%;
+  }
 }

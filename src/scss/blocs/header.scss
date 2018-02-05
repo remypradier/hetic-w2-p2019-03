@@ -1,3 +1,43 @@
+
+#yarn {
+  @include large {
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      background-image: url('../img/ball.png');
+      top: 17px;
+      left:49%;
+      z-index: 2;
+  }
+}
+
+#fil {
+  height:100%;
+  @include large {
+    z-index:99;
+    position: absolute;
+    top:0;
+    left:50%;
+    line{
+      stroke:#A61211;
+    }
+    #path1{
+      stroke-width:10px;
+    }
+    #path2, #path3{
+      position: absolute;
+      display:none;
+    }
+    #path2{
+      stroke-width:5px;
+    }
+    #path3{
+      stroke-width:5px;
+    }
+  }
+}
+
+
 %stick {
   content: "";
   position: absolute;
@@ -8,20 +48,42 @@
 }
 
 .header {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   background: #fff;
+  min-height:5vh;
 }
 
-.navigation__list {
+.header-nav {
+
+  @include medium {
+    width: 49%;
+  }
+
+  @include large {
+      width: 100%;
+  }
+
+  @include extra-large {
+      width: 100%;
+  }
+}
+
+.header__navContainer {
   display: flex;
   justify-content: space-around;
 }
 
-.nav__item {
+.header__navItem {
   width: 50%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   position: relative;
+
+  @include medium {
+    width: 33.33%;
+    position: inherit;
+  }
 
   &:nth-child(1):after {
     @extend %stick;
@@ -35,18 +97,10 @@
 
 }
 
-.nav__img {
+.header__picture {
   width: 10rem;
 }
 
-@include medium {
-
-  .navigation {
-    width: 45%;
-  }
-  .nav__item {
-    width: 33.33%;
-    position: inherit;
-  }
-
+.header__picture img {
+  width: 100%;
 }

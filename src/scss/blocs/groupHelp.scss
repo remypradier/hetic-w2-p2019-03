@@ -1,0 +1,66 @@
+.groupHelp {
+  width: 100%;
+  padding-bottom: 10%;
+
+  @include medium {
+    width: 55%;
+    padding-bottom: 0;
+  }
+}
+
+.groupHelp__title {
+  display: none;
+
+  @include medium{
+    display: block;
+  }
+}
+
+.groupHelp__title-m {
+  display: block;
+
+  @include medium {
+    display: none;
+  }
+}
+
+.groupHelp__text {
+  padding-bottom: 7%;
+
+  @include small {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include medium {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    margin: 0;
+  }
+
+  @include large {
+    width: 80%;
+    font-size: 16px;
+    padding: 5% 0;
+    margin: 0;
+  }
+}
+
+.groupHelp__button {
+  background-color: white;
+  font-size: 22px;
+  width: 100%;
+  padding: 2% 10%;
+  text-align: right;
+  display: block;
+
+  @include small {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include medium {
+    display: none;
+  }
+}

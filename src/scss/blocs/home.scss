@@ -1,39 +1,39 @@
+.groupHome{
+  min-height:90vh;
+}
 
-.home {
-  display: flex;
-  flex-wrap: wrap;
+.groupHome__titre {
+  margin: 0 0 2rem 0;
+  @include medium {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
 }
 
 .intro {
-  background: red;
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
-  width: 100%;
+  padding:50px 0 0 50px;
   @include medium {
-    width: 50%;
-  }
+    width:50%;
 
+  }
 }
 
 .intro__punchline {
-  text-align: center;
+  text-align: left;
   font-family: "ChalkboardSE-Regular";
-  font-size: 2.15rem;
+  font-size: 3.15rem;
   color: #000;
 }
 
 .intro__text {
-  text-align: center;
+  text-align: left;
   font-family: "Georgia";
   font-size: 1.16rem;
   color: #000;
-}
-
-.title-image {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  max-width: 450px;
+  margin-top: 27px;
 }
 
 
@@ -41,69 +41,54 @@
   font-family: "ChalkboardSE-Light";
   font-size: 5.3rem;
   color: #000;
-  line-height: 200%;
+  line-height: 5.3rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .title-image__image {
   width: 11rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .cap {
-  background: green;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
+  text-align: center;
   width: 100%;
   @include medium {
-    width: 50%;
+    width:50%;
   }
 }
 
 .cap__image {
   width: 8rem;
+  padding-top:50px;
 }
 
 .cap__counter {
-  display: flex;
-  flex-direction: column;
-  margin: 1.5rem 0 0 0;
+  border-bottom: 2px solid grey;
+  width: 220px;
+  margin-left: 150px;
+  transition-duration: 3s;
+  display: none;
 }
 
 .counter__numbers {
-  text-align: center;
   font-family: "Georgia-Bold";
   font-size: 1.85rem;
   color: #000;
-  position: relative;
-  padding: 0 0 0.5rem 0;
-  margin: 0 0 1rem 0;
-}
-
-.counter__numbers:after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  width: 15%;
-  background: #000;
-
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .counter__label {
-  text-align: center;
   font-family: "Georgia";
   font-size: 1.16rem;
   color: #000;
+  margin: 1rem 0 0 0;
 }
 
 .help {
   display: flex;
   justify-content: center;
-  padding: 4rem;
   width: 100%;
 }
 
@@ -118,7 +103,7 @@
 .collection {
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  //padding: 1rem;
   width: 100%;
 }
 
@@ -130,31 +115,7 @@
   font-size: 1.5rem;
 }
 
-#yarn {
-    @include large {
-        width: 27px;
-        height: 27px;
-        position: absolute;
-        background-image: url('../img/ball.png');
-        top: 20px;
-        left:50%;
-        z-index: 2;
-    }
-}
-
-#fil {
-    @include large {
-        width: 27px;
-        height: 27px;
-        position: absolute;
-        background-image: url('../img/border.png');
-        top:0;
-        left:50%;
-        z-index: 1;
-    }
-}
-
-.group-home{
+.group-home {
     @include medium {
         display: flex;
         flex-direction: row;
@@ -162,7 +123,7 @@
     }
 }
 
-.group-home-elem{
+.group-home-elem {
     @include medium {
         width:49%;
     }
@@ -176,13 +137,7 @@
     }
 }
 
-
-#counter{
-    display: none;
-    transition-duration: 1s;
-}
-
-h2.secondH2{
+h2.secondH2 {
     font-weight: 800;
     font-size: 120px;
 }
@@ -192,17 +147,13 @@ h2.secondH2{
     color: #fff;
     display: block;
     width: 350px;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     margin: 250px auto 0;
 }
 
 
-.btn a{
+.btn a {
     color: #fff;
     font-size: 40px;
-}
-
-.arrived{
-    background: red;
 }

@@ -1,25 +1,57 @@
-.stape{
+.stape {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 320px;
-}
+  flex-direction: column;
+  height: 560px;
+  padding: 0 10%;
 
-.stape__desc{
-  width: 45%;
-}
-
-.stape__picture{
-  width: 35%;
-}
-
-.stape__picture{
-  img{
-    width: 200px;
+  @include extra-large {
+    flex-direction: row;
+    height: 320px;
+    padding: 0;
   }
 }
 
-.stape__pictureTitle{
+.stape__desc {
+  order: 3;
+  width: 100%;
+  font-size: 18px;
+
+  @include extra-large {
+    order: 0;
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+.stape__picture {
+  width: 100%;
+  padding: 5% 0;
+
+  img {
+    width: 100%;
+  }
+
+  @include extra-large {
+    width: 35%;
+    padding: 0 7%;
+
+    img {
+      width: 200px;
+
+    }
+  }
+}
+
+.stape__pictureTitle {
   text-align: center;
+  font-size: 22px;
+  padding-top: 5%;
+
+  @include extra-large {
+    font-size: 18px;
+    padding-top: 0;
+  }
 }

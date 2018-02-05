@@ -5,7 +5,14 @@
 ```
 Exécuter l'application localement:
 
-$ npm run dev
+$ yarn run dev
+```
+
+```
+Déploiement:
+
+$ yarn install
+$ gulp deploy
 ```
 
 

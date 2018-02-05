@@ -100,3 +100,5 @@ gulp.task('default', gulp.parallel(templates, scss, js, images, fonts, function(
 
   done();
 }));
+
+gulp.task('deploy', gulp.series(clean, gulp.parallel(templates, scss, js, images, fonts)));

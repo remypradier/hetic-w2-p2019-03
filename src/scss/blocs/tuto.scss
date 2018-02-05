@@ -1,0 +1,7 @@
+.tuto {
+  display: none;
+
+  @include medium {
+    display: block;
+  }
+}

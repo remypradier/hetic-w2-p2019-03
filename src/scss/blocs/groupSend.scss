@@ -1,0 +1,30 @@
+.groupSend {
+    width: 100%;
+
+    @include medium {
+        width: 30%;
+        padding-left: 15%;
+    }
+
+    @include large {
+       width: 25%;
+       padding-left: 15%;
+    }
+}
+
+.groupSend__title{
+    text-align: center;
+    display: none;
+
+    @include medium{
+      display: block;
+    }
+}
+
+.groupSend__title-m{
+  display: block;
+
+  @include medium{
+    display: none;
+  }
+}
