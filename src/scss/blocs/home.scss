@@ -1,25 +1,39 @@
+<<<<<<< HEAD
 .groupHome{
   min-height:90vh;
+=======
+.groupHome {
+  padding: 2rem 0 0 0;
+>>>>>>> c3507baab6cbbf0e28f3567b646d3ae100872bf7
 }
 
 .groupHome__titre {
+  margin: 0 0 2rem 0;
   @include medium {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+
   }
 }
 
 .intro {
+<<<<<<< HEAD
   padding:50px 0 0 50px;
+=======
+  //padding: 0.5rem;
+  /*background: red;*/
+>>>>>>> c3507baab6cbbf0e28f3567b646d3ae100872bf7
   width: 100%;
   @include medium {
-    width: 49%;
+    width: 26%;
   }
 }
 
 .intro__punchline {
   text-align: left;
   font-family: "ChalkboardSE-Regular";
+<<<<<<< HEAD
   font-size: 3.15rem;
   color: #000;
 }
@@ -31,6 +45,27 @@
   color: #000;
   max-width: 450px;
   margin-top: 27px;
+=======
+
+  font-family: "ChalkboardSE-Light";
+  font-size: 2.9rem;
+  color: $dark-grey;
+  line-height: 150%;
+}
+
+.intro__text {
+  text-align: center;
+  font-family: "Georgia-Regular";
+  font-size: 0.9rem;
+  color: $dark-grey;
+}
+
+.title-image {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+>>>>>>> c3507baab6cbbf0e28f3567b646d3ae100872bf7
 }
 
 
@@ -38,6 +73,7 @@
   font-family: "ChalkboardSE-Light";
   font-size: 5.3rem;
   color: #000;
+<<<<<<< HEAD
   line-height: 5.3rem;
   display: inline-block;
   vertical-align: middle;
@@ -50,10 +86,27 @@
 }
 
 .cap {
+=======
+  line-height: 100%;
+  width: 60%;
+}
+
+.title-image__image {
+  width: 30%;
+}
+
+.title-image__image img{
+  width: 100%;
+}
+
+.cap {
+  //padding: 1rem;
+  /*background: blue;*/
+>>>>>>> c3507baab6cbbf0e28f3567b646d3ae100872bf7
   text-align: center;
   width: 100%;
   @include medium {
-    width: 49%;
+    width: 26%;
   }
 }
 
@@ -80,6 +133,7 @@
   font-family: "Georgia";
   font-size: 1.16rem;
   color: #000;
+  margin: 1rem 0 0 0;
 }
 
 .help {
