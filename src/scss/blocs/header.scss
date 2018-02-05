@@ -19,7 +19,7 @@
     top:0;
     left:50%;
     line{
-      stroke:#A61211;
+      stroke: $pamplemousse;
     }
     #path1{
       stroke-width:10px;
@@ -81,7 +81,7 @@
   position: relative;
 
   @include medium {
-    width: 29.33%;
+    width: 24.33%;
     position: inherit;
   }
 

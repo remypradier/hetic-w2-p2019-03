@@ -5,6 +5,11 @@
   padding: 2% 4% 0 10%;
   text-align: right;
   display: block;
+  border: 3px solid #ecebe8;
+
+  a {
+    //color: $pamplemousse;
+  }
 
   @include small {
     width: 80%;
@@ -25,9 +30,14 @@
     font-size: 18px;
     padding: 1% 4% 0 10%;
     text-align: right;
-
+    //color: $dragon;
     background: none;
-    border: 2px solid #ecebe8;
+    border: 3px solid #ecebe8;
     background-color: white;
+
+    &:hover {
+      //border: 3px solid $dragon;
+      transition: 0.4s;
+    }
   }
 }
