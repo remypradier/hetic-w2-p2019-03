@@ -70,7 +70,7 @@
 
 .header__navContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .header__navItem {
@@ -81,7 +81,7 @@
   position: relative;
 
   @include medium {
-    width: 33.33%;
+    width: 29.33%;
     position: inherit;
   }
 
@@ -98,7 +98,7 @@
 }
 
 .header__picture {
-  width: 10rem;
+  width: 7rem;
 }
 
 .header__picture img {

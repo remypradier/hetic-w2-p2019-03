@@ -1,8 +1,13 @@
-body {
+body, html {
   position:relative;
   font-family: "ChalkboardSE-Light";
   color: #4A4A4A;
   background-color: #FFFCF6;
+}
+
+* {
+  font-family: "ChalkboardSE-Light";
+  color: #4b4b4b;
 }
 
 section, header, footer{
@@ -14,6 +19,7 @@ section, header, footer{
 }
 
 a {
+  color: #4b4b4b;
   text-decoration: none;
 }
 

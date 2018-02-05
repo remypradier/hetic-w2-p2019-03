@@ -1,0 +1,33 @@
+.button-lg {
+  background-color: white;
+  font-size: 22px;
+  width: 100%;
+  padding: 2% 4% 0 10%;
+  text-align: right;
+  display: block;
+
+  @include small {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include medium {
+    display: none;
+  }
+}
+
+.button-lg-home {
+
+  @include small {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    font-size: 18px;
+    padding: 1% 4% 0 10%;
+    text-align: right;
+
+    background: none;
+    border: 2px solid #ecebe8;
+    background-color: white;
+  }
+}

@@ -11,21 +11,3 @@
     display: none;
   }
 }
-
-.collected__button {
-  background-color: white;
-  font-size: 22px;
-  width: 100%;
-  padding: 2% 10%;
-  text-align: right;
-  display: block;
-
-  @include small {
-    width: 80%;
-    margin: auto;
-  }
-
-  @include medium {
-    display: none;
-  }
-}
