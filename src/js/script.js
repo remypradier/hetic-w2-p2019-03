@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 fil2.style.display = 'block';
 
                 var decalRight =  yarnBallPosition.x + 150;
-                
+                /*
                 setInterval(function(){
                     
                     if(decalRight > yarnBallPosition.x){
@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         return;
                     }
                 }, 30);
+                */
                 return;
             }
         }, 30);
