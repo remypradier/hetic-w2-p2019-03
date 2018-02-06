@@ -55,9 +55,8 @@
   text-align: center;
   font-family: "ChalkboardSE";
   font-weight:bold;
-  font-size: 2.3rem;
+  font-size: $title;
   @include medium {
-    font-size: 3.0rem;
     text-align: left;
   }
 }
@@ -65,7 +64,7 @@
 .intro__text {
   text-align: center;
   font-family: "Georgia";
-  font-size: 1rem;
+  font-size: $normal;
   line-height: 25px;
   margin-top:10px;
   @include medium {

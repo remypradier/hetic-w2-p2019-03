@@ -54,11 +54,9 @@
 
 .stape__pictureTitle {
   text-align: center;
-  font-size: $subsubtitle;
+  font-size: $subtitle;
   padding-top: 5%;
-
   @include extra-large {
-    font-size: 18px;
     padding-top: 0;
   }
 }
