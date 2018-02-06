@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var path = document.querySelector('#line1');
         var length = path.getTotalLength();
+        
         // Clear any previous transition
-        path.style.transition = path.style.WebkitTransition =
-        'none';
+        path.style.transition = path.style.WebkitTransition = 'none';
         // Set up the starting positions
         path.style.strokeDasharray = length + ' ' + length;
         path.style.strokeDashoffset = length;
@@ -45,24 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // picks up the starting position before animating
         path.getBoundingClientRect();
         // Define our transition
-        path.style.transition = path.style.WebkitTransition =
-        'stroke-dashoffset 6s';
+        path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset linear 4s';
         
-        setInterval(function(){
-            if(btnPosition.y > yarnBallPosition.y){
-                yarnBallPosition.y += 5;
-                yarnBall.style.top = yarnBallPosition.y + 'px';
-                path.style.strokeDashoffset = '0';
-            } else{
-                // yarn get to btn
-                btnToGo.style.transform = "rotate(20deg)";
-                var newY1 = btnPosition.y + 20;
-                fil2.setAttribute('y1', newY1);
-                fil2.style.display = 'block';
-
-                var decalRight =  yarnBallPosition.x + 150;
-               
-            }
-        }, 50);
+        setTimeout(function() { 
+            // GO
+            path.style.strokeDashoffset = '0';
+         }, 50);
+        
+    
     }
 });
