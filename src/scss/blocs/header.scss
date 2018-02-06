@@ -1,6 +1,8 @@
 #fil {
+  display: none;
   height:100%;
   @include large {
+    display: block;
     z-index:8;
     position: absolute;
     top:0;

@@ -12,27 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // ------- ANiMATION YARN BALL
     // only if large window
     if(window.innerWidth > 1024){
-        function getPosition(element) {
-            var xPosition = 0;
-            var yPosition = 0;
-    
-            while(element) {
-                xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
-                yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
-                element = element.offsetParent;
-            }
-    
-            return { x: xPosition, y: yPosition };
-        }
-    
-
-        var yarnBall = document.querySelector('#yarn');
-        var yarnBallPosition = getPosition(yarnBall);
-    
+       
         var btnToGo = document.querySelector('.help__button');
-        var btnPosition = getPosition(btnToGo);
-        btnPosition.y = parseInt(btnPosition.y) - 50;
-
+       
         var path = document.querySelector('#line1');
         var length = path.getTotalLength();
         
@@ -50,8 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() { 
             // GO
             path.style.strokeDashoffset = '0';
-         }, 50);
+         }, 70);
         
+         setTimeout(function() { 
+            // GO
+            btnToGo.style.transform = 'rotate(20deg)';
+         }, 3000);
     
     }
 });
