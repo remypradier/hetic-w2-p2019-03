@@ -52,7 +52,8 @@
 
 .intro__punchline {
   text-align: center;
-  @include font-face(ChalkboardSE, ChalkboardSE-Regular, normal, normal);
+  font-family: "ChalkboardSE";
+  font-weight:bold;
   font-size: 2.3rem;
   @include medium {
     font-size: 3.0rem;
@@ -75,7 +76,8 @@
 
 
 .title-image__title {
-  font-family: "ChalkboardSE-Light";
+  font-family: "ChalkboardSE";
+  font-weight: light;
   font-size: 4.5rem;
   line-height: 5.3rem;
   display: inline-block;
