@@ -18,9 +18,32 @@
 }
 
 .list__item {
+  position: relative;
+  width: 20vh;
+  height: 28vh;
   margin: 30px;
+  cursor: pointer;
+  &:hover {
+    .item__content {
+      visibility: visible;
+    }
+    .list__itemPicture {
+      visibility: hidden;
+    }
+  }
 }
 
 .list__itemPicture {
-  width: 20vh;
+  width: 100%;
+}
+
+.item__content {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
