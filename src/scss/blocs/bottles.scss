@@ -1,6 +1,5 @@
 .groupBottles {
   min-height:90vh;
-  background-color: $grey;
 }
 
 .groupBottles__contentList {
@@ -18,9 +17,38 @@
 }
 
 .list__item {
+  position: relative;
+  width: 20vh;
+  height: 28vh;
   margin: 30px;
+  cursor: pointer;
+  &:hover {
+    .item__content {
+      visibility: visible;
+      opacity:1;
+      transition: opacity 1s linear;
+    }
+    .list__itemPicture {
+      visibility: hidden;
+      opacity:0;
+      transition: opacity 0.5s linear;
+    }
+  }
 }
 
 .list__itemPicture {
-  width: 20vh;
+  width: 100%;
+}
+
+.item__content {
+  visibility: hidden;
+  opacity:0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.5s linear;
 }

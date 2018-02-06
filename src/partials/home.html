@@ -1,3 +1,21 @@
+<svg id="fil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M10 0 l 0 20" fill="none" stroke-width="5" />
+  <path id="line1" d="M10,0 10,545 90,578, 90,660" fill="none" stroke-linejoin="mitter" stroke-width="5" />
+  
+  <circle id="circle" r="10" cx="10" cy="20" fill="#b4153b" />
+
+  <animateMotion 
+    xlink:href="#circle"
+    dur="4s"
+    begin="0.5s"
+    fill="freeze"
+    >
+  <mpath xlink:href="#line1" />
+
+</animateMotion>
+    
+</svg>
+
 <div class="groupHome">
   <div class="groupHome__titre">
 
@@ -15,7 +33,7 @@
         Chaque bonnet tricoté nous permettra de reverser 20 centimes aux Petits
         frère des pauvres
       </p>
-      <button class="button-lg-home" type="button" name="button">
+      <button class="button-lg button-lg-home" type="button" name="button">
         <a href="../collection.html">Voir la collection des bonnets ></a>
       </button>
     </div>
@@ -23,7 +41,7 @@
     <div class="cap">
       <img id="bonnet" class="cap__image" src="img/winter-hat.svg" />
       <div id="counter" class="cap__counter">
-        <span class="counter__numbers">5 688</span>
+        <span class="counter__numbers">5 688</span><br>
         <span class="counter__label">déjà récoltés</span>
       </div>
     </div>
@@ -32,7 +50,7 @@
   <div class="groupHome__btn">
     <div class="help">
       <button class="help__button" type="button" name="button">
-        Je veux aider
+        <a href="#blocHelpSend">Je veux aider</a>
       </button>
     </div>
   </div>

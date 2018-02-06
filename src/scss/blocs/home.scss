@@ -1,6 +1,35 @@
+#fil {
+  display: none;
+  height:100%;
+  width:150px;
+  @include large {
+    display: block;
+    z-index:8;
+    position: absolute;
+    top:0;
+    left:50%;
+    path{
+      stroke: $cerise;
+      stroke-width:5px;
+    }
+  }
+}
+
+#path2{
+  position: absolute;
+  top: 649px;
+  background: $cerise;
+  transition-duration: 1.5s;
+  height:0px;
+  width: 5px;
+}
+
 .groupHome{
-  min-height:90vh;
-  padding: 0 40px;
+  padding: 10px;
+  min-height:95vh;
+  @include medium {
+    padding: 0 40px;
+  }
 }
 
 .groupHome__titre {
@@ -14,43 +43,60 @@
 }
 
 .intro {
-  padding: 80px 0 40px 0;
-
+  padding: 30px 0 0;
   @include medium {
+    padding: 80px 0 40px 0;
     width:50%;
 
   }
 }
 
 .intro__punchline {
-  text-align: left;
-  font-family: "ChalkboardSE-Regular";
-  font-size: 3.0rem;
+  text-align: center;
+  font-family: "ChalkboardSE";
+  font-weight:bold;
+  font-size: 2.3rem;
+  @include medium {
+    font-size: 3.0rem;
+    text-align: left;
+  }
 }
 
 .intro__text {
-  text-align: left;
+  text-align: center;
   font-family: "Georgia";
-  font-size: 1.16rem;
-  width: 80%;
+  font-size: 1rem;
   line-height: 25px;
-  margin: 6% 0 3% 0;
+  margin-top:10px;
+  @include medium {
+    margin: 6% 0 3% 0;
+    width: 80%;
+    text-align: left;
+  }
 }
 
 
 .title-image__title {
-  font-family: "ChalkboardSE-Light";
-  font-size: 5.0rem;
+  font-family: "ChalkboardSE";
+  font-weight: light;
+  font-size: 4.5rem;
   line-height: 5.3rem;
   display: inline-block;
   vertical-align: middle;
+  margin-top:15px;
+  @include medium {
+    font-size: 5rem;
+    margin-top:0;
+  }
 }
 
 .title-image__image {
   display: inline-block;
   vertical-align: middle;
-  width: 140px;
-
+  width: 100px;
+  @include medium {
+    width: 140px;
+  }
   img {
     width: 100%;
   }
@@ -59,22 +105,33 @@
 .cap {
   text-align: center;
   width: 100%;
+
   @include medium {
+    margin-top: 80px;
     width:50%;
   }
 }
 
 .cap__image {
-  width: 8rem;
+  width: 6rem;
   padding-top:50px;
+
+  @include medium {
+    width: 8rem;
+  }
 }
 
 .cap__counter {
-  border-bottom: 2px solid grey;
-  width: 220px;
-  margin-left: 150px;
+  border-bottom: 4px solid #4b4b4b;
+  width: 210px;
   transition-duration: 3s;
   display: none;
+  margin-left: 70px;
+
+  @include medium {
+    margin-left: 150px;
+    padding-bottom: 5%;
+  }
 }
 
 .counter__numbers {
@@ -83,7 +140,7 @@
 }
 
 .counter__label {
-  font-family: "Georgia";
+  font-family: "Georgia-Bold";
   font-size: 1.16rem;
   margin: 1rem 0 0 0;
 }
@@ -95,11 +152,21 @@
 }
 
 .help__button {
-  color: $pamplemousse;
   background-color: white;
-  border: 3px solid #ecebe8;
+  border: 3px solid #fff;
   padding: 0.5rem 2rem 0.4rem 2rem;
   font-size: 18px;
+  @include medium {
+    position: absolute;
+    top: 545px;
+
+    &:hover {
+      a {
+        color: $cerise;
+        transition: 0.2s;
+      }
+    }
+  }
 }
 
 .collection {
@@ -158,4 +225,8 @@ h2.secondH2 {
 .btn a {
     color: #fff;
     font-size: 40px;
+}
+
+.border{
+  border:2px solid $cerise;
 }

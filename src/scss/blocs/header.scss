@@ -1,16 +1,3 @@
-#fil {
-  height:100%;
-  @include large {
-    z-index:8;
-    position: absolute;
-    top:0;
-    left:50%;
-    path{
-      stroke: $pamplemousse;
-      stroke-width:5px;
-    }
-  }
-}
 
 %stick {
   content: "";
