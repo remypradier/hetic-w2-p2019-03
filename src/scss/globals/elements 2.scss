@@ -21,35 +21,22 @@
   }
 }
 
-.button-lg-home{
-  border: 3px solid $pamplemousse;
-  position:absolute;
-  top:600px;
-  width: auto;
-  font-size: 18px;
-  padding: 1% 4% 0% 10%;
+.button-lg-home {
 
-  a {
-    color: $pamplemousse;
-  }
-
-  @include medium {
-    display: block;
-    position: inherit;
-    margin: 0;
+  @include small {
     width: 80%;
+    margin: auto;
+    background-color: white;
+    font-size: 18px;
+    padding: 1% 4% 0 10%;
+    text-align: right;
+    //color: $dragon;
+    background: none;
     border: 3px solid #ecebe8;
-
-    a {
-      color: #4b4b4b;
-    }
+    background-color: white;
 
     &:hover {
-      a {
-        color: $pamplemousse;
-        transition: 0.4s;
-      }
-      border-color: $pamplemousse;
+      //border: 3px solid $dragon;
       transition: 0.4s;
     }
   }
