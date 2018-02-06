@@ -14,6 +14,15 @@
   }
 }
 
+#path2{
+  position: absolute;
+  top: 659px;
+  background: $cerise;
+  transition-duration: 1.5s;
+  height:0px;
+  width: 5px;
+}
+
 %stick {
   content: "";
   position: absolute;
