@@ -5,7 +5,7 @@
   flex-direction: row;
   background: url(../img/herbes.png);
   background-repeat: repeat-x;
-  background-position: bottom; 
+  background-position: bottom;
   padding: 0 10px;
 
   @include medium {
@@ -14,18 +14,18 @@
 }
 
 .footer__signature {
-  font-family: Georgia-Regular;
+  font-family: "Georgia";
   width: 49%;
   text-align: left;
   font-size: 12px;
 }
 
 .footer__link {
-  font-family: Georgia-Regular;
+  font-family: "Georgia";
   width: 49%;
   text-align: right;
   a{
-    font-family: Georgia-Regular;
+    font-family: Georgia;
     font-size: 12px;
     color: $cerise;
   }
