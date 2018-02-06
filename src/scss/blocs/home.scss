@@ -78,7 +78,7 @@
 
 .title-image__title {
   font-family: "ChalkboardSE";
-  font-weight: light;
+  font-weight: lighter;
   font-size: 4.5rem;
   line-height: 5.3rem;
   display: inline-block;
@@ -122,7 +122,7 @@
 }
 
 .cap__counter {
-  border-bottom: 4px solid #4b4b4b;
+  border-bottom: 4px solid $dark-grey;
   width: 210px;
   transition-duration: 3s;
   display: none;
@@ -135,13 +135,15 @@
 }
 
 .counter__numbers {
-  font-family: "Georgia-Bold";
+  font-family: "Georgia";
+  font-weight: bold;
   font-size: 1.85rem;
 }
 
 .counter__label {
-  font-family: "Georgia-Bold";
-  font-size: 1.16rem;
+  font-family: "Georgia";
+  font-weight: bold;
+  font-size: $normal;
   margin: 1rem 0 0 0;
 }
 
@@ -152,10 +154,10 @@
 }
 
 .help__button {
-  background-color: white;
-  border: 3px solid #fff;
+  background-color: $white;
   padding: 0.5rem 2rem 0.4rem 2rem;
-  font-size: 18px;
+  font-size: $normal;
+  border: 3px solid $grey;
   @include medium {
     position: absolute;
     top: 545px;
@@ -167,64 +169,6 @@
       }
     }
   }
-}
-
-.collection {
-  display: flex;
-  justify-content: center;
-  //padding: 1rem;
-  width: 100%;
-}
-
-.collection__button {
-  background: none;
-  border: 1px solid #ddd;
-  padding: 1rem 2rem;
-  font-family: "ChalkboardSE-Light";
-  font-size: 1.5rem;
-}
-
-.group-home {
-    @include medium {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.group-home-elem {
-    @include medium {
-        width:49%;
-    }
-
-    .group-home-elem-hat{
-        img{
-            transition-duration: 1s;
-            display: block;
-            width: 300px;
-        }
-    }
-}
-
-h2.secondH2 {
-    font-weight: 800;
-    font-size: 120px;
-}
-
-.btn{
-    background: #FFCE85;
-    color: #fff;
-    display: block;
-    width: 350px;
-    padding: 5px;
-    text-align: center;
-    margin: 250px auto 0;
-}
-
-
-.btn a {
-    color: #fff;
-    font-size: 40px;
 }
 
 .border{

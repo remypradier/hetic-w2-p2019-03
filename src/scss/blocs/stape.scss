@@ -17,7 +17,7 @@
 .stape__desc {
   order: 3;
   width: 100%;
-  font-size: 18px;
+  font-size: $normal;
 
   @include large {
     width: 80%;
@@ -26,7 +26,6 @@
   @include extra-large {
     order: 0;
     width: 50%;
-    font-size: 16px;
   }
 }
 
@@ -55,7 +54,7 @@
 
 .stape__pictureTitle {
   text-align: center;
-  font-size: 22px;
+  font-size: $subsubtitle;
   padding-top: 5%;
 
   @include extra-large {
