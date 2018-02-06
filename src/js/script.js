@@ -87,12 +87,12 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('#circle').setAttribute('cx', '0');
             document.querySelector('#circle').setAttribute('cy', '0');
             path.style.strokeDashoffset = '0';
-         }, 560);
+         }, 700);
         
          setTimeout(function() {
             btnToGo.style.transform = 'rotate(20deg)';
             btnToGo.classList.add("border");
-         }, 3500);
+         }, 3800);
 
          setTimeout(function() {
             nextStep = true;
@@ -104,14 +104,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.querySelector('#circle').style.transition = "all 1.5s ease";
 
                 if(document.querySelector('#path2')){
-                    if(y > 1400){
-                        document.querySelector('#path2').style.height = "1600px";
-                        document.querySelector('#circle').setAttribute('cy', "1550");
+                    if(y > 1300){
+                        document.querySelector('#path2').style.height = "1750px";
+                        document.querySelector('#circle').setAttribute('cy', "1750");
                     } else if(y > 600){
                         document.querySelector('#path2').style.height = "800px";
-                        document.querySelector('#circle').setAttribute('cy', "750");
+                        document.querySelector('#circle').setAttribute('cy', "800");
                     } else{
-                        document.querySelector('#path2').style.height = "50px";
+                        document.querySelector('#path2').style.height = "0";
                         document.querySelector('#circle').setAttribute('cy', "0");
                     }
                 }else{
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     div.id = "path2";
                     
                     var roundPosition = getPosition(btnToGo);
-                    var dist = roundPosition.x + 176;
+                    var dist = roundPosition.x + 175.5;
                     div.style.left = dist + "px";
 
                     document.querySelector('body').appendChild(div);
