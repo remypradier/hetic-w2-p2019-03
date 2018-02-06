@@ -25,24 +25,34 @@ document.addEventListener('DOMContentLoaded', function() {
             return { x: xPosition, y: yPosition };
         }
     
+
         var yarnBall = document.querySelector('#yarn');
         var yarnBallPosition = getPosition(yarnBall);
-    
-        var fil1 = document.querySelector('#fil #path1');
-        var fil2 = document.querySelector('#fil #path2');
-        var fil3 = document.querySelector('#fil #path3');
     
         var btnToGo = document.querySelector('.help__button');
         var btnPosition = getPosition(btnToGo);
         btnPosition.y = parseInt(btnPosition.y) - 50;
 
+        var path = document.querySelector('#line1');
+        var length = path.getTotalLength();
+        // Clear any previous transition
+        path.style.transition = path.style.WebkitTransition =
+        'none';
+        // Set up the starting positions
+        path.style.strokeDasharray = length + ' ' + length;
+        path.style.strokeDashoffset = length;
+        // Trigger a layout so styles are calculated & the browser
+        // picks up the starting position before animating
+        path.getBoundingClientRect();
+        // Define our transition
+        path.style.transition = path.style.WebkitTransition =
+        'stroke-dashoffset 6s';
+        
         setInterval(function(){
-            
             if(btnPosition.y > yarnBallPosition.y){
-                var newY2 = parseInt(fil1.getAttribute('y2')) + 10;
-                yarnBallPosition.y += 10;
+                yarnBallPosition.y += 5;
                 yarnBall.style.top = yarnBallPosition.y + 'px';
-                fil1.setAttribute('y2', newY2);
+                path.style.strokeDashoffset = '0';
             } else{
                 // yarn get to btn
                 btnToGo.style.transform = "rotate(20deg)";
@@ -51,23 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 fil2.style.display = 'block';
 
                 var decalRight =  yarnBallPosition.x + 150;
-                /*
-                setInterval(function(){
-                    
-                    if(decalRight > yarnBallPosition.x){
-                        yarnBallPosition.x += 10;
-                        yarnBallPosition.y += 2;
-                        console.log('a');
-                    } else{
-                        console.log('b');
-                        fil3.style.display = 'block';
-                        return;
-                    }
-                }, 30);
-                */
-                return;
+               
             }
-        }, 30);
-        
+        }, 50);
     }
 });
