@@ -25,49 +25,33 @@ document.addEventListener('DOMContentLoaded', function() {
             return { x: xPosition, y: yPosition };
         }
     
+
         var yarnBall = document.querySelector('#yarn');
         var yarnBallPosition = getPosition(yarnBall);
-    
-        var fil1 = document.querySelector('#fil #path1');
-        var fil2 = document.querySelector('#fil #path2');
-        var fil3 = document.querySelector('#fil #path3');
     
         var btnToGo = document.querySelector('.help__button');
         var btnPosition = getPosition(btnToGo);
         btnPosition.y = parseInt(btnPosition.y) - 50;
 
-        setInterval(function(){
-            
-            if(btnPosition.y > yarnBallPosition.y){
-                var newY2 = parseInt(fil1.getAttribute('y2')) + 10;
-                yarnBallPosition.y += 10;
-                yarnBall.style.top = yarnBallPosition.y + 'px';
-                fil1.setAttribute('y2', newY2);
-            } else{
-                // yarn get to btn
-                btnToGo.style.transform = "rotate(20deg)";
-                var newY1 = btnPosition.y + 20;
-                fil2.setAttribute('y1', newY1);
-                fil2.style.display = 'block';
-
-                var decalRight =  yarnBallPosition.x + 150;
-                /*
-                setInterval(function(){
-                    
-                    if(decalRight > yarnBallPosition.x){
-                        yarnBallPosition.x += 10;
-                        yarnBallPosition.y += 2;
-                        console.log('a');
-                    } else{
-                        console.log('b');
-                        fil3.style.display = 'block';
-                        return;
-                    }
-                }, 30);
-                */
-                return;
-            }
-        }, 30);
+        var path = document.querySelector('#line1');
+        var length = path.getTotalLength();
         
+        // Clear any previous transition
+        path.style.transition = path.style.WebkitTransition = 'none';
+        // Set up the starting positions
+        path.style.strokeDasharray = length + ' ' + length;
+        path.style.strokeDashoffset = length;
+        // Trigger a layout so styles are calculated & the browser
+        // picks up the starting position before animating
+        path.getBoundingClientRect();
+        // Define our transition
+        path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset linear 4s';
+        
+        setTimeout(function() { 
+            // GO
+            path.style.strokeDashoffset = '0';
+         }, 50);
+        
+    
     }
 });

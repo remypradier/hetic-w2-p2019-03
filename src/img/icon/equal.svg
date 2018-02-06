@@ -1,39 +1,15 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
-<path style="fill:#7383BF;" d="M37.059,8H26H16H4.941C2.224,8,0,10.282,0,13s2.224,5,4.941,5H16h10h11.059
-	C39.776,18,42,15.718,42,13S39.776,8,37.059,8z"/>
-<path style="fill:#7383BF;" d="M37.059,24H26H16H4.941C2.224,24,0,26.282,0,29s2.224,5,4.941,5H16h10h11.059
-	C39.776,34,42,31.718,42,29S39.776,24,37.059,24z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="26px" viewBox="0 0 42 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-15" fill-rule="nonzero" fill="#4B4B4B">
+            <g id="equal">
+                <path d="M37.059,0 L26,0 L16,0 L4.941,0 C2.224,0 0,2.282 0,5 C0,7.718 2.224,10 4.941,10 L16,10 L26,10 L37.059,10 C39.776,10 42,7.718 42,5 C42,2.282 39.776,0 37.059,0 Z" id="Shape"></path>
+                <path d="M37.059,16 L26,16 L16,16 L4.941,16 C2.224,16 0,18.282 0,21 C0,23.718 2.224,26 4.941,26 L16,26 L26,26 L37.059,26 C39.776,26 42,23.718 42,21 C42,18.282 39.776,16 37.059,16 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
 </svg>

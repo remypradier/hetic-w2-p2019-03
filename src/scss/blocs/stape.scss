@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 560px;
+  height: 600px;
   padding: 0 10%;
 
   @include extra-large {
@@ -19,6 +19,10 @@
   width: 100%;
   font-size: 18px;
 
+  @include large {
+    width: 80%;
+  }
+
   @include extra-large {
     order: 0;
     width: 50%;
@@ -32,6 +36,10 @@
 
   img {
     width: 100%;
+  }
+
+  @include large {
+    width: 80%;
   }
 
   @include extra-large {

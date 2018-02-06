@@ -1,42 +1,16 @@
-
-#yarn {
-  @include large {
-      width: 27px;
-      height: 27px;
-      position: absolute;
-      background-image: url('../img/ball.png');
-      top: 17px;
-      left:49%;
-      z-index: 2;
-  }
-}
-
 #fil {
   height:100%;
   @include large {
-    z-index:99;
+    z-index:8;
     position: absolute;
     top:0;
     left:50%;
-    line{
-      stroke:#A61211;
-    }
-    #path1{
-      stroke-width:10px;
-    }
-    #path2, #path3{
-      position: absolute;
-      display:none;
-    }
-    #path2{
-      stroke-width:5px;
-    }
-    #path3{
+    path{
+      stroke: $pamplemousse;
       stroke-width:5px;
     }
   }
 }
-
 
 %stick {
   content: "";
@@ -70,7 +44,7 @@
 
 .header__navContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .header__navItem {
@@ -81,7 +55,7 @@
   position: relative;
 
   @include medium {
-    width: 33.33%;
+    width: 24.33%;
     position: inherit;
   }
 
@@ -98,7 +72,7 @@
 }
 
 .header__picture {
-  width: 10rem;
+  width: 7rem;
 }
 
 .header__picture img {

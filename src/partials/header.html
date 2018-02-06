@@ -7,12 +7,22 @@
   </head>
   <body>
     <svg id="fil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <line id="path1" x1="0" y1="0" x2="0" y2="30"></line>
-      <line id="path2" x1="0" y1="400" x2="150" y2="490"></line>
-      <line id="path3" x1="150" y1="490" x2="150" y2="550"></line>
+      <path id="line1" d="M10,0 10,500 120,540, 120,700" fill="none" stroke-linejoin="mitter" stroke-width="5" />
+      
+      <circle id="circle" r="10" cx="0" cy="0" fill="#eb516c" />
+
+      <animateMotion 
+        xlink:href="#circle"
+        dur="4s"
+        begin="0s"
+        fill="freeze"
+        >
+      <mpath xlink:href="#line1" />
+
+    </animateMotion>
+        
     </svg>
     
-    <div id="yarn"></div>
 
     <header class="header">
       <nav class="header__nav">
