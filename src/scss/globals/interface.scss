@@ -1,12 +1,14 @@
 body, html {
   position:relative;
-  font-family: "ChalkboardSE-Light";
+  font-family: "ChalkboardSE";
+  font-weight: light;
   color: #4A4A4A;
   background-color: #FFFCF6;
 }
 
 * {
-  font-family: "ChalkboardSE-Light";
+  font-family: "ChalkboardSE";
+  font-weight: light;
   color: #4b4b4b;
 }
 
@@ -38,7 +40,7 @@ button {
 }
 
 h2 {
-  font-family: 'Georgia-Regular';
+  font-family: 'Georgia';
 }
 
 h1 {
@@ -64,7 +66,8 @@ h2 {
 }
 
 h3 {
-  font-family: 'ChalkboardSE-Light', cursive;
+  font-family: 'ChalkboardSE', cursive;
+  font-weight: light;
   font-size: 28px;
 
   @include medium {
@@ -81,7 +84,7 @@ h4 {
 }
 
 p {
-  font-family: 'Georgia-Regular';
+  font-family: 'Georgia';
   font-size: 20px;
   line-height: 35px;
 }

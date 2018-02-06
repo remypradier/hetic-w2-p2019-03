@@ -1,6 +1,7 @@
 #fil {
   display: none;
   height:100%;
+  width:150px;
   @include large {
     display: block;
     z-index:8;
@@ -52,7 +53,8 @@
 
 .intro__punchline {
   text-align: center;
-  @include font-face(ChalkboardSE, ChalkboardSE-Regular, normal, normal);
+  font-family: "ChalkboardSE";
+  font-weight:bold;
   font-size: 2.3rem;
   @include medium {
     font-size: 3.0rem;
@@ -75,7 +77,8 @@
 
 
 .title-image__title {
-  font-family: "ChalkboardSE-Light";
+  font-family: "ChalkboardSE";
+  font-weight: light;
   font-size: 4.5rem;
   line-height: 5.3rem;
   display: inline-block;
@@ -132,12 +135,14 @@
 }
 
 .counter__numbers {
-  font-family: "Georgia-Bold";
+  font-family: "Georgia";
+  font-weight: bold;
   font-size: 1.85rem;
 }
 
 .counter__label {
-  font-family: "Georgia-Bold";
+  font-family: "Georgia";
+  font-weight: bold;
   font-size: 1.16rem;
   margin: 1rem 0 0 0;
 }
@@ -177,7 +182,8 @@
   background: none;
   border: 1px solid #ddd;
   padding: 1rem 2rem;
-  font-family: "ChalkboardSE-Light";
+  font-family: "ChalkboardSE";
+  font-weight: light;
   font-size: 1.5rem;
 }
 

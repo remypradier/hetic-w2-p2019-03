@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if(y > 1300){
                         document.querySelector('#path2').style.height = "1750px";
                         document.querySelector('#circle').setAttribute('cy', "1750");
-                    } else if(y > 600){
+                    } else if(y > 670){
                         document.querySelector('#path2').style.height = "800px";
                         document.querySelector('#circle').setAttribute('cy', "800");
                     } else{
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     div.id = "path2";
                     
                     var roundPosition = getPosition(btnToGo);
-                    var dist = roundPosition.x + 175.5;
+                    var dist = roundPosition.x + 167;
                     div.style.left = dist + "px";
 
                     document.querySelector('body').appendChild(div);
