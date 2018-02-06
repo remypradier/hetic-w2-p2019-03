@@ -1,6 +1,6 @@
 .groupHome{
   padding: 10px;
-  min-height:90vh;  
+  min-height:90vh;
   @include medium {
     padding: 0 40px;
   }
@@ -27,7 +27,7 @@
 
 .intro__punchline {
   text-align: center;
-  font-family: "ChalkboardSE-Regular";
+  @include font-face(ChalkboardSE, ChalkboardSE-Regular, normal, normal);
   font-size: 2.3rem;
   @include medium {
     font-size: 3.0rem;
