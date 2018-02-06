@@ -60,21 +60,12 @@ h1 {
 
 h2 {
   font-weight:300;
-  font-size: 60px;
 }
 
 h3 {
   font-family: 'ChalkboardSE', cursive;
   font-weight: lighter;
-  font-size: 28px;
-
-  @include medium {
-    font-size: 18px;
-  }
-
-  @include large {
-    font-size: 20px;
-  }
+  font-size: $subtitle;
 }
 
 h4 {
@@ -83,6 +74,6 @@ h4 {
 
 p {
   font-family: 'Georgia';
-  font-size: 20px;
+  font-size: $normal;
   line-height: 35px;
 }

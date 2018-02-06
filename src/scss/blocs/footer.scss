@@ -17,7 +17,7 @@
   font-family: "Georgia";
   width: 49%;
   text-align: left;
-  font-size: 12px;
+  font-size: $small;
 }
 
 .footer__link {
@@ -26,7 +26,7 @@
   text-align: right;
   a{
     font-family: Georgia;
-    font-size: 12px;
+    font-size: $small;
     color: $cerise;
   }
 }
