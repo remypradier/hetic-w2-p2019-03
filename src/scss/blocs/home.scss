@@ -74,21 +74,12 @@
   }
 }
 
-.button-lg-home{
-  position:absolute;
-  top:600px;
-  width: auto;
-  @include medium {
-    display:block;
-    position: inherit;
-  }
-}
-
 .cap {
   text-align: center;
   width: 100%;
+
   @include medium {
-    margin-top: 75px;
+    margin-top: 80px;
     width:50%;
   }
 }
@@ -103,14 +94,15 @@
 }
 
 .cap__counter {
-  border-bottom: 2px solid grey;
-  width: 220px;
+  border-bottom: 4px solid #4b4b4b;
+  width: 210px;
   transition-duration: 3s;
   display: none;
   margin-left: 70px;
 
   @include medium {
     margin-left: 150px;
+    padding-bottom: 5%;
   }
 }
 
@@ -120,7 +112,7 @@
 }
 
 .counter__label {
-  font-family: "Georgia";
+  font-family: "Georgia-Bold";
   font-size: 1.16rem;
   margin: 1rem 0 0 0;
 }
@@ -132,14 +124,20 @@
 }
 
 .help__button {
-  color: $pamplemousse;
   background-color: white;
-  border: 3px solid #ecebe8;
+  border: 3px solid #fff;
   padding: 0.5rem 2rem 0.4rem 2rem;
   font-size: 18px;
   @include medium {
     position: absolute;
     top: 545px;
+
+    &:hover {
+      a {
+        color: $cerise;
+        transition: 0.2s;
+      }
+    }
   }
 }
 
