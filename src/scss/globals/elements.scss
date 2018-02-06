@@ -1,15 +1,11 @@
 .button-lg {
-  background-color: white;
+  background-color: $white;
   font-size: $subsubtitle;
   width: 100%;
   padding: 2% 4% 0 10%;
   text-align: right;
   display: block;
-  border: 3px solid #ecebe8;
-
-  a {
-    //color: $pamplemousse;
-  }
+  border: 3px solid $grey;
 
   @include small {
     width: 80%;
@@ -27,7 +23,7 @@
   top:600px;
   width: auto;
   font-size: $normal;
-  padding: 1% 4% 0% 10%;
+  padding: 1% 4% 1% 10%;
 
   a {
     color: $pamplemousse;
@@ -38,10 +34,10 @@
     position: inherit;
     margin: 0;
     width: 80%;
-    border: 3px solid #ecebe8;
+    border: 3px solid $grey;
 
     a {
-      color: #4b4b4b;
+      color: $dark-grey;
     }
 
     &:hover {
