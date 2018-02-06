@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if(y > 1300){
                         document.querySelector('#path2').style.height = "1750px";
                         document.querySelector('#circle').setAttribute('cy', "1750");
-                    } else if(y > 600){
+                    } else if(y > 670){
                         document.querySelector('#path2').style.height = "800px";
                         document.querySelector('#circle').setAttribute('cy', "800");
                     } else{
