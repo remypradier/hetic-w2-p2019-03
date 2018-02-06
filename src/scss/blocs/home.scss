@@ -1,6 +1,7 @@
 #fil {
   display: none;
   height:100%;
+  width:150px;
   @include large {
     display: block;
     z-index:8;
