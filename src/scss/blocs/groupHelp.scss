@@ -26,6 +26,7 @@
 
 .groupHelp__text {
   padding-bottom: 7%;
+  font-size: $normal;
 
   @include small {
     width: 80%;
@@ -33,15 +34,12 @@
   }
 
   @include medium {
-    font-size: 14px;
     line-height: 20px;
     width: 100%;
     margin: 0;
   }
-
   @include large {
     width: 80%;
-    font-size: 16px;
     padding: 5% 0;
     margin: 0;
   }

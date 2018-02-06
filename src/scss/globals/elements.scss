@@ -1,6 +1,6 @@
 .button-lg {
   background-color: white;
-  font-size: 22px;
+  font-size: $subsubtitle;
   width: 100%;
   padding: 2% 4% 0 10%;
   text-align: right;
@@ -26,7 +26,7 @@
   position:absolute;
   top:600px;
   width: auto;
-  font-size: 18px;
+  font-size: $normal;
   padding: 1% 4% 0% 10%;
 
   a {

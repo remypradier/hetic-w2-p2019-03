@@ -35,16 +35,12 @@
 .groupSendShop__text {
   text-align: center;
   font-weight: lighter;
+  font-size: $normal;
 
   @include medium {
-    font-size: 14px;
     text-align: left;
     line-height: 20px;
     padding-top: 5%;
-  }
-
-  @include large {
-    font-size: 16px;
   }
 
   span, a{

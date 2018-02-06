@@ -36,15 +36,9 @@
   text-align: center;
   font-weight: lighter;
   font-style: italic;
-
+  font-size: $normal;
   @include medium {
-    font-size: 14px;
     line-height: 20px;
     padding-top: 5%;
   }
-
-  @include large {
-    font-size: 16px;
-  }
 }
-

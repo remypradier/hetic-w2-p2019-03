@@ -1,12 +1,14 @@
 
-//14px --> 1rem
-//16px --> 1.01rem
-// 1.16rem
-// 1.85rem
+$normal: 1rem;
+
+$subsubtitle: 1.3rem;
+$subtitle: 2rem;
+$title: 3rem;
+
 //20px --> 1.25rem
 //36px --> 2.25rem
 // 3rem
-// 5rem
+
 
 @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
   @font-face {
