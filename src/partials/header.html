@@ -7,14 +7,15 @@
   </head>
   <body>
     <svg id="fil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M10 0 l 0 20" fill="none" stroke-width="5" />
       <path id="line1" d="M10,0 10,545 90,578, 90,700" fill="none" stroke-linejoin="mitter" stroke-width="5" />
       
-      <circle id="circle" r="10" cx="0" cy="0" fill="#eb516c" />
+      <circle id="circle" r="10" cx="10" cy="20" fill="#b4153b" />
 
       <animateMotion 
         xlink:href="#circle"
         dur="4s"
-        begin="0s"
+        begin="0.5s"
         fill="freeze"
         >
       <mpath xlink:href="#line1" />

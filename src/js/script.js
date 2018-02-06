@@ -1,3 +1,16 @@
+function getPosition(element) {
+    var xPosition = 0;
+    var yPosition = 0;
+
+    while(element) {
+        xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+        element = element.offsetParent;
+    }
+
+    return { x: xPosition, y: yPosition };
+}
+    
 document.addEventListener('DOMContentLoaded', function() {
 
     // Slider for mobile version of tutorial
@@ -11,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var slides = document.querySelectorAll('#slides .slide_mob');
     console.log(slides);
     var currentSlide = 0;
-
 
     function goToSlide(n){
       slides[currentSlide].className = 'slide_mob';
@@ -27,9 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
       goToSlide(currentSlide-1);
     }
 
-
     var playing = true;
-
 
     var next = document.getElementById('next');
     var previous = document.getElementById('previous');
@@ -50,17 +60,18 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(function(){
         hat.style.transform = "translate(70px,-20px) rotate(35deg)";
         counter.style.display = 'block';
-    }, 1000);
+    }, 500);
 
     // ------- ANiMATION YARN BALL
     // only if large window
     if(window.innerWidth > 1024){
-
+        var nextStep = false;
+       
         var btnToGo = document.querySelector('.help__button');
        
         var path = document.querySelector('#line1');
         var length = path.getTotalLength();
-
+        
         // Clear any previous transition
         path.style.transition = path.style.WebkitTransition = 'none';
         // Set up the starting positions
@@ -71,16 +82,50 @@ document.addEventListener('DOMContentLoaded', function() {
         path.getBoundingClientRect();
         // Define our transition
         path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset linear 4s';
-
-        setTimeout(function() {
+        setTimeout(function() { 
             // GO
+            document.querySelector('#circle').setAttribute('cx', '0');
+            document.querySelector('#circle').setAttribute('cy', '0');
             path.style.strokeDashoffset = '0';
-         }, 70);
+         }, 560);
+        
+         setTimeout(function() {
+            btnToGo.style.transform = 'rotate(20deg)';
+            btnToGo.classList.add("border");
+         }, 3500);
 
          setTimeout(function() {
-            // GO
-            btnToGo.style.transform = 'rotate(20deg)';
-         }, 3000);
+            nextStep = true;
+         }, 4000);
 
+         document.addEventListener('scroll', function(event) {
+            if(nextStep){
+                var y = document.documentElement.scrollTop;  
+                document.querySelector('#circle').style.transition = "all 1.5s ease";
+
+                if(document.querySelector('#path2')){
+                    if(y > 1400){
+                        document.querySelector('#path2').style.height = "1600px";
+                        document.querySelector('#circle').setAttribute('cy', "1550");
+                    } else if(y > 600){
+                        document.querySelector('#path2').style.height = "800px";
+                        document.querySelector('#circle').setAttribute('cy', "750");
+                    } else{
+                        document.querySelector('#path2').style.height = "50px";
+                        document.querySelector('#circle').setAttribute('cy', "0");
+                    }
+                }else{
+                    var div = document.createElement('div');
+                    div.id = "path2";
+                    
+                    var roundPosition = getPosition(btnToGo);
+                    var dist = roundPosition.x + 176;
+                    div.style.left = dist + "px";
+
+                    document.querySelector('body').appendChild(div);
+                }
+            }
+        });
     }
+
 });
