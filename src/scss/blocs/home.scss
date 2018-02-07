@@ -87,6 +87,9 @@
     font-size: 5rem;
     margin-top:0;
   }
+  @include small {
+    font-size: 3.5rem;
+  }
 }
 
 .title-image__image {
@@ -172,4 +175,5 @@
 
 .border{
   border:2px solid $cerise;
+  transform: rotate(20deg);
 }

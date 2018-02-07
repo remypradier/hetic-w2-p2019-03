@@ -10,6 +10,12 @@
   @include small {
     width: 80%;
     margin: auto;
+    border: 3px solid $pamplemousse;
+    font-size: $normal;
+    padding: 1% 4% 1% 10%;
+    a {
+      color: $pamplemousse;
+    }
   }
 
   @include medium {
@@ -21,10 +27,10 @@
   border: 3px solid $pamplemousse;
   position:absolute;
   top:600px;
+  left: 52px;
   width: auto;
   font-size: $normal;
   padding: 1% 4% 1% 10%;
-
   a {
     color: $pamplemousse;
   }
@@ -34,8 +40,8 @@
     position: inherit;
     margin: 0;
     width: 80%;
+    left: 0;
     border: 3px solid $grey;
-
     a {
       color: $dark-grey;
     }
