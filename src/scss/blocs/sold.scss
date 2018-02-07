@@ -20,10 +20,6 @@
   @include small {
     width: 80%;
   }
-
-  @include medium {
-    display: none;
-  }
 }
 
 .sold__description--m {
@@ -51,5 +47,9 @@
     display: block;
     height:100%;
     margin:0 auto;
+  }
+
+  @include small{
+    margin-bottom: 25px;
   }
 }
