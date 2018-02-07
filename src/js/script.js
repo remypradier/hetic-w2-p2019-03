@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
          }, 700);
         
          setTimeout(function() {
-            btnToGo.style.transform = 'rotate(20deg)';
             btnToGo.classList.add("border");
          }, 3800);
 
@@ -107,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if(y > 1300){
                         document.querySelector('#path2').style.height = "1750px";
                         document.querySelector('#circle').setAttribute('cy', "1750");
-                    } else if(y > 670){
+                    } else if(y > 630){
                         document.querySelector('#path2').style.height = "800px";
                         document.querySelector('#circle').setAttribute('cy', "800");
                     } else{
@@ -119,13 +118,25 @@ document.addEventListener('DOMContentLoaded', function() {
                     div.id = "path2";
                     
                     var roundPosition = getPosition(btnToGo);
-                    var dist = roundPosition.x + 167;
+                    var dist = roundPosition.x + 152.5;
                     div.style.left = dist + "px";
 
                     document.querySelector('body').appendChild(div);
                 }
             }
         });
+    }
+
+    window.onresize = function(e){
+        var screen_width = window.innerWidth;
+        var screen_height = window.innerHeight;
+
+        if( screen_width < 1024){
+            document.querySelector('#path2').style.display = "none";
+            if(document.querySelector('.help__button')){
+                document.querySelector('.help__button').classList.remove('border');
+            }
+        }
     }
 
 });
