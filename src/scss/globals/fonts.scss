@@ -12,8 +12,8 @@ $title: 2.3rem;
   }
 }
 
-@include font-face(ChalkboardSE, ChalkboardSE-Bold, bold, normal);
-@include font-face(ChalkboardSE, ChalkboardSE-Regular, normal, normal);
-@include font-face(ChalkboardSE, ChalkboardSE-Light, lighter, normal);
+@include font-face('ChalkboardSE', ChalkboardSE-Bold, bold, normal);
+@include font-face('Chalkboard', ChalkboardSE-Regular, normal, normal);
+@include font-face('Chalkboard', ChalkboardSE-Light, lighter, normal);
 @include font-face(Georgia, Georgia-Bold, bold, normal);
 @include font-face(Georgia, Georgia-Regular, normal, normal);

@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     div.id = "path2";
                     
                     var roundPosition = getPosition(btnToGo);
-                    var dist = roundPosition.x + 152.5;
+                    var dist = roundPosition.x + 169;
                     div.style.left = dist + "px";
 
                     document.querySelector('body').appendChild(div);
