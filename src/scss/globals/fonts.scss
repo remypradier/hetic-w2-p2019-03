@@ -6,7 +6,6 @@ $title: 2.3rem;
 @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
   @font-face {
    font-family: $font-family;
-   src: url('../../fonts/#{$file-path}.woff2') format('woff2');
    src: url('../../fonts/#{$file-path}.woff') format('woff');
    font-weight: $font-weight;
    font-style: $font-style;
